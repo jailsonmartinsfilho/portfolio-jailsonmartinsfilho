@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(47,45,68);
+    background: linear-gradient(180deg, rgb(42, 40, 61) 0%, rgba(20,19,29,1) 55%, rgba(16,15,24,1) 95%);
+    color: aliceblue;
+    font-family: 'Sarala', sans-serif;
+    font-size: 400;
+}
+
+header{
+    /* border: 1px solid blue; */
+    height: 13vh;
+    display: flex;
+}
+
+.divlogo{
+    /* border: 1px solid yellow; */
+    padding-left: 10vw;
+    display: flex;
+    align-items: center;
+}
+.nazaricklogo{
+    height: 80%;
+    cursor: pointer;
+    margin-top: 1.2vh;
+    /* border: 1px solid rgb(255, 5, 5); */
+}
+
+nav{
+    /* border: 1px solid pink; */
+    padding-left: 55%;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2.3vh;
+    transition: color 0.3s;
+}
+
+nav a:hover{
+    color: rgb(190, 190, 190);
+    transition: color 0.3s;
+}
+
+.container1{
+    /* border: 1px solid yellow; */
+    height: 87vh;
+    width: 100%;
+    display: flex;
+}
+
+.container2{
+    border: 1px solid yellow;
+    height: 100vh;
+    width: 100%;
+}
+
+.container1primeirametade{
+    /* border: 1px solid green; */
+    width: 50%;
+}
+
+.divh3{
+    /* border: 1px solid blue; */
+    padding-top: 20vh;
+    padding-left: 10vh;
+    font-size: 2vh;
+}
+
+.divh1{
+    /* border: 1px solid yellow; */
+    font-size: 4vh;
+    padding-left: 10vh;
+}
+
+.spanh1{
+    color: rgb(134, 93, 172);
+}
+
+.divapresentacao{
+    /* border: 1px solid red; */
+    padding-left: 10vh;
+    width: 91%;
+    height: 11%;
+    color: rgb(161, 168, 182);
+    line-height: 1.5;
+    font-size: 2vh;
+}
+
+.divredes{
+    /* border: 1px solid blue; */
+    height: 9vh;
+    display: flex;
+    padding-left: 10vh;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 8vh;
+}
+
+.divgithub{
+    display: flex;
+    align-items: center;
+    gap: 0.4vw;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.divgithub:hover{
+    color: rgb(190, 190, 190);
+    transition: color 0.3s;
+}
+
+.container1segundametade{
+    /* border: 1px solid blue; */
+    width: 50%;
+}
+
+.foto{
+    width: 35%;
+    border-radius: 50%;
+    margin-left: 17vw;
+    margin-top: 17vh;
+    cursor: pointer;
+    transition: transform 0.5s;
+    box-shadow: 1px 1px 10px 10px rgba(20, 20, 20, 0.2);
+}
+
+.foto:hover{
+    transform: scale(1.3);
+    transition: transform 0.5s;
+}
+
+
+.copytext{
+    padding-left: 8vw;
+    margin-top: 8vh;
+    display: flex;
+    gap: 0.3vw;
+}
+
+.text{
+    height: 10vh;
+    width: 35vw;
+    color: aliceblue;
+    background-color: rgba(20, 20, 20, 0.2);
+    border: 1px solid aliceblue;
+    font-size: 3.6vh;
+    text-align: center;
+    font-family: 'Sarala', sans-serif;
+    pointer-events: none;
+}
+
+.text::selection {
+    background-color: rgba(255, 255, 0, 0); 
+}
+
+.buttoncopy{    
+    height: 10vh;
+    width: 5vw;
+    cursor: pointer;
+}
+
+.buttoncopyclicado{
+    content:"Copiado para a área de transferência";
+    height: 10vh;
+    width: 35vw;
+    position: absolute;
+    top: 75.2vh;
+    right: 6.3vw;
+    background-color: rgba(20, 20, 20, 0.911);
+    border: none;
+    color: aliceblue;
+    font-family: 'Sarala', sans-serif;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    display: none;
+}
+
+.divtextoskill{
+    box-shadow: 1px 1px 10px 10px rgba(20, 20, 20, 0.2);
+    background: transparent;
+    border-radius: 80px;
+    width: 30%;
+    height: 30vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    /* border: 1px solid blue; */
+}
+
+.container2 .divtextoskill .card .percent{
+    position: absolute;
+    transform: rotate(270deg);
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(212, 212, 212);
+    
+}
+
+.card{
+    width: 30vh;
+    height: 25vh;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.circuloum{
+    fill: transparent;
+    stroke-width: 3;
+    stroke: #191919;
+    position: relative;
+    top: -20px;
+    transform: translateX(30px);
+}
+
+.circulodois{
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * 60) / 100) ;
+    fill: transparent;
+    stroke-width: 3;
+    stroke: var(--clr);
+    filter: drop-shadow(0 0 3px var(--clr));
+    transform: translateX(30px);
+}
+
+.ponto{
+    fill: var(--clr);;
+    filter: drop-shadow(0 0 10px var(--clr));
+    transform: translateX(30px);
+}
+
+.number{
+ position: relative;
+ left: -150px;
+ inset: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: transparent;  
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+
+  .swiper-slide .percent {
+    font-size: 18px;
+    position: relative;
+    top: -80px;
+    transform: rotate(270deg);
+  }
+
+  .swiper-slide img {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    color: aliceblue !important;
+  }
+
+  .divtextohabilidades{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    font-size: 6vh;
+    padding-top: 10vh;
+  }
+
+.divhabilidades{
+    /* border: 1px solid pink; */
+    display: flex;
+    justify-content: center;
+}
