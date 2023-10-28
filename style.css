@@ -147,6 +147,13 @@ nav a:hover{
     margin-top: 8vh;
     display: flex;
     gap: 0.3vw;
+    /* border: 3px solid pink;    */
+    display: flex;
+    justify-content: center;
+}
+
+.copytext input{
+    /* border: 1px solid yellow; */
 }
 
 .text{
@@ -175,9 +182,8 @@ nav a:hover{
     content:"Copiado para a área de transferência";
     height: 10vh;
     width: 35vw;
+    left: 58.3vw;
     position: absolute;
-    top: 75.2vh;
-    right: 6.3vw;
     background-color: rgba(20, 20, 20, 0.911);
     border: none;
     color: aliceblue;
@@ -186,6 +192,7 @@ nav a:hover{
     justify-content: center;
     border: 1px solid white;
     display: none;
+    font-size: 2vh;
 }
 
 .divtextoskill{
@@ -235,7 +242,7 @@ nav a:hover{
 
 .circulodois{
     stroke-dasharray: 440;
-    stroke-dashoffset: calc(440 - (440 * 60) / 100) ;
+    stroke-dashoffset: calc(440 - (440 * var(--porcentagem)) / 100) ;
     fill: transparent;
     stroke-width: 3;
     stroke: var(--clr);
