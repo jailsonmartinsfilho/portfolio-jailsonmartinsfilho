@@ -1,6 +1,6 @@
 const buttoncopy = document.querySelector(".buttoncopy")
 const buttoncopyclicado = document.querySelector(".buttoncopyclicado")
-const text = document.querySelector(".text")
+const text = document.querySelector(".inputtext")
 
 buttoncopy.addEventListener("click", (evt) =>{
     buttoncopyclicado.style.display = "block";
@@ -9,7 +9,7 @@ buttoncopy.addEventListener("click", (evt) =>{
 
     setTimeout(function () {
         buttoncopyclicado.style.display = "none";
-    }, 1200);
+    }, 2100);
 })
 
 var swiper = new Swiper(".mySwiper", {
